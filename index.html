@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+<body>
+  <header class="cabeçalho">
+    <div class=caixa>
+        <input type="checkbox" id="menu" class="caixa-botao">
+        <label for="menu">
+    <span class="cabeçalho-menu-amburguer caixa-imagem"></span></label>
+    <ul class="lista-menu">
+        <li class="lista-menu-titulo"> ACESSÓRIOS</li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link"> Pedais</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Cordas</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Amplificadores</a>
+        </li>
+        <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Palhetas</a>
+        </li>
+    </ul>
+    <a href="#"><img class=caixa-imagem src="carrinho de compras.svg" alt="carrinho de compras"></a></div>
+   
+    <div class=caixa><a href="#"><li class="cadastro">CADASTRO</li></a><a href="#"><img  class=caixa-imagem src="home.svg" alt="home"></a>
+    <a href="#" ><img  class=caixa-imagem src="meus favoritos.svg" alt="meus favoritos"></a></div>
+</header>
+<section class="banner">
+    <h2 class="banner-titulo"> Deseja comprar uma guitarra?</h2>
+    <p class="banner-texto"> Descubra o modelo ideal para você</p>
+    <input type="search" class="banner-pesquisa" 
+   placeholder="Digite o modelo desejado">
+</section>
+<section class="carrossel">
+    <h2 class="carrossel-titulo"> CONHEÇA AS GUITARRAS PRINCIPAIS</h2>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="stratocaster.jpeg" alt="stratocaster"></div>
+      <div class="swiper-slide"><img src="lespaul.jpg" alt="lespaul"></div>
+      <div class="swiper-slide"><img src="telecaster.jpeg" alt="telecaster"></div>
+      <div class="swiper-slide"><img src="sg.jpeg" alt="sg"></div>
+      <div class="swiper-slide"><img src="flyingv.jpeg" alt="flyingv"></div>
+      <div class="swiper-slide"><img src="explorer.webp" alt="explorer"></div>
+    </div>
+   
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="card">
+                <!-- 1º linha -->
+      <div class="card-descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <h3 class="decrição-titulo"> CONHEÇA MAIS SOBRE O INSTRUMENTO PARA QUE POSSAMOS TE AJUDAR,
+             CONTE COM INFORMAÇÕES DETALHADAS DE CADA PARTE.</h3>
+
+             <h2 Class="descrição-piscina"> MODELO NA IMAGEM: SUPERSTRATOCASTER. </h2>
+
+             <p class="descriçã-texto">Cada parte tem um papel crucial na geração e modulação do som da guitarra. </p>
+              Taraxas: Dispositivos localizados na cabeça da guitarra, usados para afinar as cordas, ajustando sua tensão. </p>
+              Headstock (Cabeçote): A parte superior da guitarra, onde estão localizadas as taraxas.</P>
+               Braço: Parte longa da guitarra que conecta o corpo ao headstock. Nele estão os trastes, e é onde os dedos pressionam as cordas para formar notas. </P>
+               Captadores: Dispositivos que captam a vibração das cordas e a transformam em sinal elétrico, permitindo a amplificação do som. </P>
+               Chave Seletora: Controla qual captador será usado ou permite combinações entre eles, mudando o timbre da guitarra. </P>
+              Knobs: Botões que controlam o volume e o tom da guitarra, permitindo ajustes sonoros. </P>
+               Ponte: Parte onde as cordas estão presas na parte inferior do corpo da guitarra. Ela mantém a afinação e também pode ser usada para alterar a tensão das cordas em alguns modelos. </P>
+               Corpo: A estrutura maior da guitarra, onde ficam fixadas a ponte, os captadores, e os controles. É o principal elemento visual e de sustentação do instrumento. </p> </div>
+             <!-- 2º coluna -->
+              <img src="partesguita.png" class="descrição-imagem">
+      </div>
+      <!-- 2º linha -->
+       <div class="card-botões">
+         <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões-item"><img src="meus favoritos.svg" alt="favoritar piscina"></li>
+          <li class="botões-item"><img src="carrinho de compras.svg" alt="adicionar no carrinho"></li>
+        </ul>
+        <!-- 2º coluna -->
+         <a href="#" class="botões-ancora">CONHEÇA NOSSAS PEÇAS</a>
+       </div>
+    </div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+</section>
+<section class="contato">
+<h2 class="contato-titulo">Fique por dentro das promoções, e dos novos modelos.</h2>
+
+<input type="email" placeholder="Cadastre seu e-mail" class="contato-email">
+</section>
+<hr />
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script> const swiper = new Swiper('.swiper', {
+    spaceBetween: 10, slidesPerView: 3,
+    pagination: { el: '.swiper-pagination',
+        type: 'bullets',},
+    });</script>
+</body>
+</html>
